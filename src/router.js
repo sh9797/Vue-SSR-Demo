@@ -8,7 +8,7 @@ export default function () {
         mode: 'history',
         routes: [
             {
-                path: '/home',
+                path: '/',
                 name: 'home',
                 component: Home
             },
@@ -19,7 +19,7 @@ export default function () {
             },
             {
                 path: '*',
-                redirect: '/home'
+                redirect: '/'
             }
         ]
     })

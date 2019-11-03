@@ -11,19 +11,19 @@
     export default {}
 </script>
 
-<style>
+<style scoped lang="scss">
     #app {
         width: 100%;
         margin-top: 20px;
         text-align: center;
+        span{
+            display: inline-block;
+            font-size: 20px;
+            text-decoration: underline;
+            margin-top: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
     }
-    span{
-        display: inline-block;
-        font-size: 20px;
-        color: blue;
-        text-decoration: underline;
-        margin-top: 10px;
-        margin-left: 10px;
-        cursor: pointer;
-    }
+
 </style>
