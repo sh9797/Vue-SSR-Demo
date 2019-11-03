@@ -1,25 +1,29 @@
 <template>
     <div id="app">
-        <h1 class="title">Vue-SSR</h1>
-        <input type="date" class="inp">
+        <h1 class="app">Server side render---Vue SSR</h1>
+        <router-link tag="span" to="/">Home</router-link>
+        <router-link tag="span" to="/about">About</router-link>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-    export default {
-        name: "App"
-    }
+    export default {}
 </script>
 
-<style scoped>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    #app{
+<style>
+    #app {
         width: 100%;
         margin-top: 20px;
         text-align: center;
-        color: #00d3be;
+    }
+    span{
+        display: inline-block;
+        font-size: 20px;
+        color: blue;
+        text-decoration: underline;
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;
     }
 </style>

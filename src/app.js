@@ -1,11 +1,13 @@
-import Vue from 'vue';
-import App from './App';
+import Vue from "vue";
+import app from "./App.vue";
+import createRouter from "./router.js";
 
-export default function () { // 导出函数:让每一次访问该网站都是一次新的Vue实例,与单例模式相反
+export default function() {
     return new Vue({
-        template:'<App/>',
-        components:{
-            App
+        template: "<app/>",
+        router: createRouter(),
+        components: {
+            app
         }
-    })
+    });
 }
